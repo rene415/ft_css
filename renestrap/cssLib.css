@@ -1,0 +1,57 @@
+/** 
+    ft_bootstrap, my own take on bootstrap to make my work pretty
+**/
+/* everything get a border box to align everything */
+*{
+    box-sizing: border-box;
+}
+
+/* the html file will contain this font, unless it is changed */
+html{
+    font-family: 'Source Code Pro', monospace;
+    line-height: 1.6;
+}
+/* Headers contain no margin top but contain 0.5em of margin at the bottom */
+h1, h2, h3, h4, h5, h6{
+    margin-top: 0em;
+    margin-bottom: 0.5em;
+}
+/* Paragraphs contain no margin top but contain 1em of margin at the bottom */
+p{
+    margin-top: 0em;
+    margin-bottom: 1em;
+}
+/* applies 1em of padding from left and right, and keeps the margin size to the size of the display */
+.box,
+.box-xs,
+.box-sm,
+.box-md,
+.box-lg,
+.box-xl
+{
+    width: 100%;
+    padding-right: 1em;
+    padding-left: 1em;
+    margin-right: auto;
+    margin-left: auto;
+}
+/* this will keeep it locked to max width of extra small screens */
+@media (min-width: 400px){
+    .box, .box-xs { max-width: 380px; }
+}
+/* this will keeep it locked to max width of small screens*/
+@media (min-width: 568px){
+    .box, .box-xs, .box-sm { max-width: 548px; }
+}
+/* this will keeep it locked to max width of large screens*/
+@media (min-width: 768px){
+    .box, .box-xs, .box-sm, .box-md { max-width: 748px; }
+}
+/* this will keeep it locked to max width of small screens lg most laptops*/
+@media (min-width: 990px){
+    .box, .box-xs, .box-sm, .box-md, .box-lg { max-width: 970px; }
+}
+/* this will keeep it locked to max width of XL screens Desktops*/
+@media (min-width: 1400px){
+    .box, .box-xs, .box-sm, .box-md, .box-lg,.box-xl{ max-width: 1200px; }
+}
